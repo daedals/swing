@@ -7,11 +7,14 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    ApplicationBar: typeof import('./src/components/ApplicationBar.vue')['default']
+    DatePicker: typeof import('./src/components/DatePicker.vue')['default']
     DayComponentMax: typeof import('./src/components/DayComponentMax.vue')['default']
     DayComponentMin: typeof import('./src/components/DayComponentMin.vue')['default']
     DayGantt: typeof import('./src/components/DayGantt.vue')['default']
     DayGanttBar: typeof import('./src/components/DayGanttBar.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    NavigationPanel: typeof import('./src/components/NavigationPanel.vue')['default']
     Sidebar: typeof import('./src/components/Sidebar.vue')['default']
   }
 }
